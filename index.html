@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir Network Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+    <div class="logo">ELIXIR NETWORK ARCHITECTURE</div>
+   
+</header>
+    <div class="carousel">
+        <div class="list">
+            <div class="item">
+                <img src="part 6 elixir.png">
+                <div class="introduce">
+                    <div class="title">Part 6</div>
+                    <div class="topic"> Thank you 🩷</div>
+                    <div class="des">
+                      Thanks for reading cultists, Keep stacking those Potions, Mainnet is coming!! <br> <br> There Is No Cult :D
+
+                    </div>
+                    
+                </div>
+               
+            </div>
+
+            <div class="item">
+                <img src= "exchange feeds elixir.png" >
+                <div class="introduce">
+                    <div class="title">Part 1</div>
+                    <div class="topic">Exchange Feeds</div>
+                    <div class="des">
+                        
+                        Exchange feeds hold read-only credentials for each exchange 
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Exchange Feeds</div>
+                    <div class="des">
+                        
+                        Exchange Feeds, They hold read-only credentials for each exchange, and individually subscribe to a single update stream, broadcasting that data to the data aggregators.
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="data agg new.png">
+                <div class="introduce">
+                    <div class="title">Part 2</div>
+                    <div class="topic">Data Aggregator</div>
+                    <div class="des">
+                        The data aggregator collects data from multiple exchange feeds and combines them into a deterministic data frame
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Data Aggregator</div>
+                    <div class="des">
+                        After recieving the broadcasted data from multiple exchange feed, data aggregator combines them into a deterministic data frame, signs them, and broadcasts them to the validators and auditors. <br><br> This piece of the Elixir tech stack enables validators to act upon accurate data related from the exchange feeds.
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="dpos elixir.png">
+                <div class="introduce">
+                    <div class="title">Part 3</div>
+                    <div class="topic">Validator Network (DPoS)</div>
+                    <div class="des">
+                        Elixir's validator network operates off of a decentralized proof of stake system with 66% consensus required
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Validator Network (DPoS)</div>
+                    <div class="des">
+                        Elixir's validator network operates off of a decentralized proof of stake system with 66% consensus required, which is enforced at the relay node. End users delegate their stake to validators, and the top-staked validators will receive the largest portion of rewards.
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="relay node elixir.png">
+                <div class="introduce">
+                    <div class="title">Part 4</div>
+                    <div class="topic">Relay Nodes
+                    </div>
+                    <div class="des">
+                        Relay nodes hold trading keys for individual exchanges and tally order proposal frames from the individual validators
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Relay Nodes
+                    </div>
+                    <div class="des">
+                        Relay nodes hold trading keys for individual exchanges and tally order proposal frames from the individual validators. After a order proposal has expired, it is passed to an auditor to verify correctness. <br><br> Long term, API keys will be protected via SGX + Shamir's Secret Sharing within these nodes. 
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="dispute elixir.png">
+                <div class="introduce">
+                    <div class="title">Part 5</div>
+                    <div class="topic">Dispute Resolution</div>
+                    <div class="des">
+                        The dispute resolution layer (comprised of the Auditor, Controller, and Provable.xyz infrastructure) works to ensure that the network is acting honestly
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Dispute Resolution</div>
+                    <div class="des">
+                        The dispute resolution layer (comprised of the Auditor, Controller, and Provable.xyz infrastructure) works to ensure that the network is acting honestly, and to resolve any conflicts should they arise. <br><br> Specifically, this layer ensures that the validators are running the market making algorithm, with properly set parameters based on the initial guidance. <br><br> Furthermore, auditors also work to incentivize honest behavior from validators via a bounty, while penalizing dishonesty.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+            <button id="back">See All  &#8599</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
